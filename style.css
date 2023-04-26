@@ -199,7 +199,8 @@ h4 {
 }
 
 .features__image {
-    border-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .features__description {
@@ -501,9 +502,7 @@ h4 {
         padding-bottom: 1rem;
         margin: 0;
     }
-    .hero-features__item:not(:nth-child(1)) {
-        border-right: unset;
-    }
+
     .hero-features__item:not(:last-child) {
         border-right: unset;
         border-bottom: 2px solid #F0F2F5;
