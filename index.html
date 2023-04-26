@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VA Task Manager</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="../LAR-landing-3.0/css/style.css">
+    <link rel="stylesheet" href=./css/style.css>
 </head>
 <body>
     <main>
@@ -16,7 +15,7 @@
                 <img src="./img/logo.svg" alt="" class="hero-top__logo">
                 <div class="hero-top__content">
                     <h1 class="header-top__title">Chat with the manager<br> is your inbox with him.</h1>
-                    <p class="hero-top__text">Manage tasks where you got them. VA spends up to 20 hours<br> a month copy-pasting tasks. Every hundredth task is lost when moving between inboxes.</p>
+                    <p class="hero-top__text">Manage tasks where you got them. VA spends up to 20 hours a month copy-pasting tasks. Every hundredth task is lost when moving between inboxes.</p>
                     <button class="hero-top__button">Request download</button>
                 </div>
                 <img src="./img/hero_figure.png" alt="" class="hero-top__image">
@@ -97,22 +96,22 @@
                 <p class="form__text">This means that it is important for us to make sure that the product is put to good use, and we have the opportunity to invite the user to an interview to ask an opinion in exchange for a reward.</p>
                 <p class="form__text">It is not a fact that we will invite you in particular, but we reserve this right. Please feel in the form to apply.</p>
             </div>
-            <div class="form__fields">
+            <form class="form__fields" action="#">
                 <input class="form__input" type="text" placeholder="First name and last name">
-                <input class="form__input" type="text" placeholder="Occupation">
+                <input class="form__input" type="text" placeholder="Occupation" >
                 <input class="form__input" type="text" placeholder="What tool are you currently using?">
                 <input class="form__input" type="email" placeholder="Email for communication, not for spam - 100% 😅">
                 <button class="form__button" type="submit">Request download</button>
-            </div>
+            </form>
         </section>
     </main>
     <footer class="footer">
         <span class="footer__copyright">© 2023 VA Tasking</span>
-        <div>
+        <div class="footer__links">
             <a href="#" class="footer__terms">Terms of use</a>
             <a href="#" class="footer__policy">Privacy Policy</a>
         </div>
     </footer>
-
+    <script src="./js/script.js"></script>
 </body>
 </html>
