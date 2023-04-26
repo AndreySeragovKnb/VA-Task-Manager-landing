@@ -1,10 +1,12 @@
+//Отправка формы
+const form = document.querySelector('.form__fields');
+const formSuccess = document.querySelector('.form__success');
+const formInputs = document.querySelector('.form__inputs');
 
-var f = document.querySelector('form')
-
-f.addEventListener('submit', function(e) {
+form.addEventListener('submit', function(e) {
     e.preventDefault();
-    var data = new FormData(this) // Сборка формы
-    var url = 'https://jsonplaceholder.typicode.com/posts'
+    const data = new FormData(this) // Сборка формы
+    const url = 'https://jsonplaceholder.typicode.com/posts'
     fetch(url, {
         method: 'post',
         headers: {
@@ -14,17 +16,9 @@ f.addEventListener('submit', function(e) {
     })
         .then(response => {
             if (response.ok) {
-                console.log(123)
+                formInputs.classList.add('hide');
+                formSuccess.classList.remove('hide');
             }
         })
-        // .then((json) => { // Ответ
-        //     if (json.id === 101) { // Для примера проверка пройдена если id === 101
-        //         // Добавление поля
-        //         var info = document.querySelector('.info')
-        //         info.innerText = 'Удачно Отправлено'
-        //     }
-        //     // Дебаг узнать что прошла форма
-        //     console.log(json)
-        // })
         .catch(err => console.log(err));
 })
