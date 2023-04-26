@@ -198,6 +198,10 @@ h4 {
     overflow: hidden;
 }
 
+.features__image {
+    border-radius: 1rem;
+}
+
 .features__description {
     padding: 1.5rem;
 }
@@ -397,8 +401,8 @@ h4 {
     .hero-features {
         grid-template-columns: repeat(2, 1fr);
     }
-    .hero-features__item:not(:nth-child(2)) {
-        border-right: 2px solid #F0F2F5;
+    .hero-features__item:nth-child(2) {
+        border-right: unset;
     }
     .features__list {
         grid-template-columns: repeat(2, 1fr);
@@ -497,7 +501,7 @@ h4 {
         padding-bottom: 1rem;
         margin: 0;
     }
-    .hero-features__item:not(:nth-child(2)) {
+    .hero-features__item:not(:nth-child(1)) {
         border-right: unset;
     }
     .hero-features__item:not(:last-child) {
