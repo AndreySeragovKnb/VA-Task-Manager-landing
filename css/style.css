@@ -44,7 +44,8 @@ body {
     color: #57646E;
 }
 
-button {
+button,
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,10 +60,12 @@ button {
     cursor: pointer;
     box-shadow: 0 1px 4px 0 #00000014;
 }
-button:hover {
+button:hover,
+.button:hover {
     opacity: 80%;
 }
-button:active {
+button:active,
+.button:active {
     opacity: unset;
 }
 
